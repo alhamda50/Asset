@@ -1,0 +1,91 @@
+/* Styling for the explore menu container */
+.explore-menu {
+    color: #262626;
+    font-weight: 500;
+    margin-top: 50px;
+    position: relative; /* Needed for positioning custom scrollbar */
+  }
+  
+  /* Styling the text description */
+  .explore-menu-text {
+    max-width: 60%;
+  }
+  
+  /* The actual list of items, making it scrollable horizontally */
+  .explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scroll effect */
+    padding-bottom: 10px; /* To prevent scrollbar from overlapping with content */
+  }
+  
+  /* Hide the default scrollbar */
+  .explore-menu-list::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+  }
+  
+  /* Custom scrollbar track (background of the scrollbar) */
+  .explore-menu-list::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light grey background */
+    border-radius: 10px;
+  }
+  
+  /* Custom scrollbar thumb (the actual draggable part) */
+  .explore-menu-list::-webkit-scrollbar-thumb {
+    background: tomato; /* Green color for the thumb */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Custom scrollbar thumb hover effect */
+  .explore-menu-list::-webkit-scrollbar-thumb:hover {
+    background: tomato; /* Darker green when hovered */
+  }
+  
+  /* Styling the individual items in the list */
+  .explore-menu-list-item video {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Text under each video */
+  .explore-menu-list-item p {
+    margin-top: 10px;
+    color: #656060;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+  }
+  
+  /* Underline for active item */
+  .explore-menu hr {
+    margin-top: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+  }
+  
+  /* Active state for the selected item */
+  .explore-menu-list-item .active {
+    border: 4px solid tomato;
+    padding: 2px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1050px) {
+    .explore-menu-text {
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+  

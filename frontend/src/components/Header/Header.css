@@ -1,0 +1,98 @@
+/* General carousel container styling */
+.header-carousel {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Reduced height to 60% of the viewport height */
+  overflow: hidden;
+  background-color: #fef3f0; /* Subtle tomato background tint */
+  margin-top: 10px;
+}
+
+/* Individual slide styling */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hide the slide */
+  z-index: 0; /* Place slides behind the active one */
+  transition: opacity 1s ease-in-out; /* Fade transition */
+}
+
+.carousel-slide.active {
+  opacity: 1; /* Show the active slide */
+  z-index: 1; /* Bring the active slide to the front */
+}
+
+/* Image styling */
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content inside image */
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 2rem 3rem; /* Increased padding */
+  z-index: 2; /* Ensure content is above the image */
+}
+
+.carousel-content h2 {
+  font-size: 2rem; /* Larger caption font size */
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Navigation dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: tomato;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-carousel {
+    height: 50vh; /* Reduced height for smaller screens */
+  }
+
+  .carousel-content {
+    width: 80%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}

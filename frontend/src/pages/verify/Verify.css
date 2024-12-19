@@ -1,0 +1,39 @@
+/* src/styles/Verify.css */
+
+/* The main container for the verification page */
+.verify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    background-color: #f4f4f9;  /* Light background */
+    font-family: Arial, sans-serif;
+}
+
+/* The spinner style */
+.spinner {
+    border: 4px solid #f3f3f3; /* Light gray background color */
+    border-top: 4px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%; /* Circular shape */
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; /* Spins indefinitely */
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Optionally, you can add some text for when it's verifying */
+.verify .spinner:after {
+    content: "Verifying Payment...";
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}

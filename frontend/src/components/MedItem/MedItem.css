@@ -1,0 +1,107 @@
+.event-item {
+    width: 100%;
+    max-width: 240px; /* Consistent width for all cards */
+    height: 380px; /* Fixed height for the entire card */
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.event-item-img-container {
+    width: 100%;
+    height: 180px; /* Fixed height for image container */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.event-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+}
+
+.event-item-info {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+}
+
+.event-item-name-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-item-name-rating p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-item-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    height: 40px; /* Fixed height for description */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.event-item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: tomato;
+    margin-top: auto;
+}
+
+.event-item-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 3px 10px black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.event-item-img-container .add:hover {
+    background: rgb(119, 194, 162);
+    box-shadow: 1px 3px 8px rgb(119, 194, 162);
+}
+
+.event-item-counter {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.event-item-counter img {
+    width: 30px;
+}

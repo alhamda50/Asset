@@ -1,0 +1,89 @@
+/* Add some spacing to avoid overlap with the fixed navbar */
+.my-orders {
+    margin-top: 10px; /* Adjust this value based on the height of your navbar */
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px); /* Ensure full-page height minus navbar */
+}
+
+.my-orders h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.my-orders-order {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-orders-order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.my-orders-order img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.my-orders-order p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.my-orders-order p span {
+    color: #4caf50; /* Green dot for status */
+    margin-right: 5px;
+}
+
+.my-orders-order b {
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.no-orders {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 50px;
+}

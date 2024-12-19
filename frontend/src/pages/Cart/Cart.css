@@ -1,0 +1,141 @@
+/* Cart container */
+.cart {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #fef8f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+  border: double black 2px;
+}
+
+/* Title row */
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ffdbd6;
+  border-radius: 10px;
+  color: #5c2c2c;
+}
+
+.cart-items-title img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Item rows */
+.cart-items-title:not(:first-child) {
+  background-color: #ffe6e2;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.cart-items-title:not(:first-child):hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty cart message */
+.empty-cart-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #a94442;
+  margin: 20px 0;
+}
+
+/* Remove button */
+.remove-item {
+  font-size: 1.2rem;
+  color: tomato;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.remove-item:hover {
+  color: #d63031;
+}
+
+/* Cart bottom section */
+.cart-bottom {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffdbd6;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-total {
+  text-align: center;
+}
+
+.cart-total h2 {
+  color: tomato;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.cart-total-details p {
+  margin: 0;
+}
+
+.cart-total-details b {
+  font-size: 1.2rem;
+}
+
+/* Checkout button */
+.cart-total button {
+  margin-top: 20px;
+  background-color: tomato;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-total button:hover {
+  background-color: #e63946;
+}
+
+/* Footer-specific adjustments (ensure it stays intact) */
+.footer {
+  margin-top: 30px;
+  padding: 20px 0;
+  background-color: #5c2c2c;
+  color: #fff;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

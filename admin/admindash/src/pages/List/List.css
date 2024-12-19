@@ -1,0 +1,82 @@
+.list {
+    padding: 20px;
+    background-color: #d0e0eeb8; /* Light background */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.list p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0a0a0a;
+    margin-bottom: 16px;
+    margin-left: 255px;
+}
+
+.list-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 0.5fr;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.list-table-format.title {
+    background-color: #eeccb4;
+    color: #fff;
+    font-weight: bold;
+    color: black;
+    border: 2px solid;
+}
+
+.list-table-format{
+    border:
+}
+
+.list-table-format img {
+    width: 50px; /* Image thumbnail size */
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.list-table-format p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.cross {
+    font-size: 16px;  /* Size of the "x" */
+    color: #ff4c4c;  /* Red color to indicate deletion */
+    width: 24px;     /* Width of the circular button */
+    height: 24px;    /* Height of the circular button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe5e5;  /* Light red background */
+    border-radius: 50%;   /* Makes it a circle */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.cross:hover {
+    color: #fff;               /* White color on hover */
+    background-color: #ff4c4c; /* Darker red background on hover */
+    opacity: 1;                /* Full opacity on hover */
+    transform: scale(1.1);     /* Slightly enlarge on hover */
+}
+

@@ -1,0 +1,120 @@
+/* Add.css */
+
+.add {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .add-img-upload {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .add-img-upload p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .add-img-upload label {
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .add-img-upload img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px dashed #d1d5db;
+    padding: 8px;
+    transition: 0.3s;
+  }
+  
+  .add-img-upload img:hover {
+    border-color: #4a90e2;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-product-name,
+  .add-product-description,
+  .add-category-price,
+  .add-price {
+    margin-top: 10px;
+  }
+  
+  .add-product-name p,
+  .add-product-description p,
+  .add-category-price p,
+  .add-price p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .add-product-name input,
+  .add-product-description textarea,
+  .add-category-price select,
+  .add-price input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+    background-color: #fff;
+  }
+  
+  .add-product-name input:focus,
+  .add-product-description textarea:focus,
+  .add-category-price select:focus,
+  .add-price input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  .add-product-description textarea {
+    resize: none;
+  }
+  
+  .add-category-price {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .add-price {
+    flex-grow: 1;
+  }
+  
+  .add-btn {
+    padding: 12px;
+    border: none;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #357ab8;
+  }
+  
